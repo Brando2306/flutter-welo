@@ -13,7 +13,7 @@ class BlogPage extends StatefulWidget {
 }
 
 class _BlogPageState extends State<BlogPage> {
-  PageController _pageController;
+  late PageController _pageController;
   double _currentPageValue = 0.0;
   int _currentPage = 0;
 
@@ -24,7 +24,7 @@ class _BlogPageState extends State<BlogPage> {
       ..addListener(
         () {
           setState(() {
-            _currentPageValue = _pageController.page;
+            _currentPageValue = _pageController.page!;
           });
         },
       );

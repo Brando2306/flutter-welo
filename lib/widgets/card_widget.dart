@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CardWidget extends StatelessWidget {
   final VoidCallback action;
 
-  const CardWidget({Key key, @required this.action}) : super(key: key);
+  const CardWidget({Key? key, required this.action}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(

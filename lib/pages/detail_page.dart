@@ -17,7 +17,10 @@ class DetailPage extends StatelessWidget {
         shadowColor: Colors.black.withOpacity(0.4),
         backgroundColor: Colors.transparent,
         elevation: 15,
-        title: Text('Articles'),
+        title: Text(
+          'Articles',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
         leading: CupertinoButton(
           child: Icon(CupertinoIcons.left_chevron, color: Colors.white),
